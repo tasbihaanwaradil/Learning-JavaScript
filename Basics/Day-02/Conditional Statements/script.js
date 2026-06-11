@@ -79,7 +79,10 @@
 
 //Grading System
 
-let std_marks = -1;
+// let std_marks = -1;
+
+let std_marks = Number(prompt("Enter your marks"));
+
 if (std_marks < 0) {
     console.log("Enter valid marks")
 }
@@ -94,3 +97,8 @@ else if (std_marks >= 90 && std_marks <= 100) {
 } else {
     console.log("F")
 }
+
+
+
+
+
