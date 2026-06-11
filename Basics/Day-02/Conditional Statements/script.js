@@ -81,22 +81,40 @@
 
 // let std_marks = -1;
 
-let std_marks = Number(prompt("Enter your marks"));
+// let std_marks = Number(prompt("Enter your marks"));
 
-if (std_marks < 0) {
-    console.log("Enter valid marks")
-}
-else if (std_marks >= 90 && std_marks <= 100) {
-    console.log("A+")
-} else if (std_marks >= 80 && std_marks <= 89) {
-    console.log("A")
-} else if (std_marks >= 70 && std_marks <= 79) {
-    console.log("B")
-} else if (std_marks >= 60 && std_marks <= 69) {
-    console.log("C")
-} else {
-    console.log("F")
-}
+// if (std_marks < 0) {
+//     console.log("Enter valid marks")
+// }
+// else if (std_marks >= 90 && std_marks <= 100) {
+//     console.log("A+")
+// } else if (std_marks >= 80 && std_marks <= 89) {
+//     console.log("A")
+// } else if (std_marks >= 70 && std_marks <= 79) {
+//     console.log("B")
+// } else if (std_marks >= 60 && std_marks <= 69) {
+//     console.log("C")
+// } else {
+//     console.log("F")
+// }
+
+
+//Nested if else 
+
+// let age = 10;
+// let entry_ticket = false;
+
+// if (age >= 13) {
+//     console.log("You are Eligible")
+
+//     if (entry_ticket == true) {
+//         console.log("You can watch the show now")
+//     } else {
+//         console.log("You are not allowed to enter in hall")
+//     }
+// } else {
+//     console.log("You are not Eligible")
+// }
 
 
 
