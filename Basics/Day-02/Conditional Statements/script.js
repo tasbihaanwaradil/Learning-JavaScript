@@ -29,15 +29,68 @@
 
 // Find Positive and Negative Number
 
-let num = 100;
+// let num = 0;
 
-if (num < 0) {
-    console.log(num + " is a negative number")
-} else if (num === 0) {
-    console.log("Number is zero")
+// if (num < 0) {
+//     console.log(num + " is a negative number")
+// } else if (num === 0) {
+//     console.log("Number is zero")
 
-} else {
-    console.log(num + " is a positive number")
+// } else {
+//     console.log(num + " is a positive number")
+// }
+
+// console.log('end of program')
+
+
+//Write a program to check a number is Even Or Odd
+
+// let num = 0;
+
+//check number must be greater than 0
+// if (num === 0) {
+//     console.log("Please enter a number greater than 0 to check even or odd")
+// }
+// else if (num % 2 === 0) {
+//     console.log(num, "is an Even Number")
+// } else {
+//     console.log(num, "is a Odd Number")
+// }
+
+
+//Calculator
+
+// let a = 10;
+// let b = 5;
+// let op = "-";
+
+// if (op === "+") {
+//     console.log(a + b)
+// } else if (op === "-") {
+//     console.log(a - b)
+// } else if (op === "*") {
+//     console.log(a * b)
+// } else if (op === "/") {
+//     console.log(a / b)
+// } else {
+//     console.log("Invalid Operator")
+// }
+
+
+//Grading System
+
+let std_marks = -1;
+if (std_marks < 0) {
+    console.log("Enter valid marks")
 }
-
-console.log('end of program')
+else if (std_marks >= 90 && std_marks <= 100) {
+    console.log("A+")
+} else if (std_marks >= 80 && std_marks <= 89) {
+    console.log("A")
+} else if (std_marks >= 70 && std_marks <= 79) {
+    console.log("B")
+} else if (std_marks >= 60 && std_marks <= 69) {
+    console.log("C")
+} else {
+    console.log("F")
+}
