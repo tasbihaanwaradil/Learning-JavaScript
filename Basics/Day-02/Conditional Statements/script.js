@@ -117,6 +117,35 @@
 // }
 
 
+//Switch Case
+// let num1 = 20;
+// let num2 = 10;
+// let op = "-";
+
+// switch (op) {
+//     case "+":
+//         console.log(num1 + num2)
+//         break
+//     case "-":
+//         console.log(num1 - num2)
+//         break
+//     case "*":
+//         console.log(num1 * num2)
+//         break
+//     case "/":
+//         console.log(num1 / num2)
+//         break
+//     case "%":
+//         console.log(num1 % num2)
+//         break
+//     default:
+//         console.log("Invalid Operator")
+//         break
+// }
 
 
 
+
+//Ternary Operator
+let age = 15;
+age >= 12 ? console.log("You are Eligible") : console.log("You are not eligible")
