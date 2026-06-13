@@ -1,37 +1,59 @@
-// Loops in JavaScript
+//Loops
+// for, do while, while
+//for each, for of, for in
+//map, reduce, filter
 
-// while Loop
-
-// let a = 10;
-// while (a >= 0) {
-//     console.log(a)
-//     a--
+// for (let i = 1; i <= 10; i++) {
+//     console.log(i)
 // }
 
-//For Loop
+// 1) starting point => Initialization
+// 2) ending point   => Condition
+// 3) way of move    => Increment/decrement
 
-// for (num = 0; num < 10; num++) {
-//     console.log(num)
+//Steps how program will execute
+
+// 1) Initialization
+// 2) Condition check
+// 3) inside loop      //1
+//
+
+// Interview Question
+
+// for (let i = 1; i <= 10; i++) {
+//     console.log(i)
 // }
 
-//By Sir Affaq
+// What is the final value of i in the memory
+// The final value is 11
 
-//print a table
-// let num = 2;
-// for (let i = 1; i <= 0; i++) {
-//     console.log(`${num * i}`)
+//Even Numbers
 
+// for (let i = 2; i < 100; i++) {
+//     if (i % 2 === 0) {
+//         console.log(i)
+//     }       
 // }
 
-// starting point => 3
-// ending point => 89
-// if number is divisible by 5 ( you have to add 2 in it)
-// if number is divisible by 7 ( you have to subtract 2 from num)
+//Odd Numbers
+// for (let i = 1; i < 100; i++) {
+//     if (i % 2 === 1) {
+//         console.log(i)
+//     }
+// }
 
-for (let i = 3; i <= 89; i++) {
-    if (i % 5 == 0) {
-        console.log(i + 2)
-    } else if (i % 7 == 0) {
-        console.log(i - 2)
-    }
-}
+//Reverse Order 10,9,8,7...
+
+// for(let i = 10; i>=0; i--){
+//     console.log(i)
+// }
+
+
+//print table of a number entered by the user
+// let table_no = Number(prompt("Enter a number: "))
+
+// for (let i = 1; i <= 10; i++) {
+//     //console.log(table_no * i)
+//     console.log(`${table_no} X ${i} = ${table_no * i}`)
+
+// }
