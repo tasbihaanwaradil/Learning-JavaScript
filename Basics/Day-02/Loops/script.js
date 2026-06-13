@@ -81,3 +81,20 @@
 // for (let i = new_str.length - 1; i >= 0; i--) {
 //     console.log(new_str[i])
 // }
+
+//Write a program to check if the word is palindrome or not
+
+let user_word = "madam"
+let reverse_word = ""
+
+//print word in reverse order
+for (i = user_word.length - 1; i >= 0; i--) {
+    console.log(user_word[i])
+    reverse_word += user_word[i]
+}
+
+if (reverse_word === user_word) {
+    console.log("is Palinfrome")
+} else {
+    console.log("not")
+}
