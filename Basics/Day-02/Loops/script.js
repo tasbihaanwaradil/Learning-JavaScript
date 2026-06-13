@@ -63,11 +63,21 @@
 // if number is divisible by 5 ( you have to add 2 in it)
 // if number is divisible by 7 ( you have to subtract 2 from num)
 
-for (let i = 3; i <= 89; i++) {
-    if (i % 5 === 0) {
-        console.log(i + 2)
-    } if (i % 7 === 0) {
-        console.log(i - 2)
-    }
+// for (let i = 3; i <= 89; i++) {
+//     if (i % 5 === 0) {
+//         console.log(i + 2)
+//     } if (i % 7 === 0) {
+//         console.log(i - 2)
+//     }
 
-}
+// }
+
+// //print string in reverse order
+
+// let new_str = "JavaScript"
+// // let start = new_str[0]
+// // let end = new_str.length
+
+// for (let i = new_str.length - 1; i >= 0; i--) {
+//     console.log(new_str[i])
+// }
