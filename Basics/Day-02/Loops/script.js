@@ -84,17 +84,27 @@
 
 //Write a program to check if the word is palindrome or not
 
-let user_word = "madam"
-let reverse_word = ""
+// let user_word = "madam"
+// let reverse_word = ""
 
-//print word in reverse order
-for (i = user_word.length - 1; i >= 0; i--) {
-    console.log(user_word[i])
-    reverse_word += user_word[i]
+// //print word in reverse order
+// for (i = user_word.length - 1; i >= 0; i--) {
+//     console.log(user_word[i])
+//     reverse_word += user_word[i]
+// }
+
+// if (reverse_word === user_word) {
+//     console.log("is Palinfrome")
+// } else {
+//     console.log("not")
+// }
+
+
+//// sum of first 10 natural no
+let sum_of_num = 0
+
+for (let i = 1; i <= 10; i++) {
+    sum_of_num += i
 }
 
-if (reverse_word === user_word) {
-    console.log("is Palinfrome")
-} else {
-    console.log("not")
-}
+console.log("Sum of First 10 Natural Numbers: ", sum_of_num)
