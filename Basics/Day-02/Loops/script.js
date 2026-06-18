@@ -136,23 +136,85 @@
 
 //Write a program to check if a number is Prime or not
 
-let num = 4;
-let isPrime = true
+// let num = 4;
+// let isPrime = true
 
 //Ege case num < 2
-if (num < 2) {
-    isPrime = false
-}
+// if (num < 2) {
+//     isPrime = false
+// }
 
-for (let i = 2; i < num; i++) {
-    if (num % i === 0) {
-        isPrime = false
-        break
-    }
-}
+// for (let i = 2; i < num; i++) {
+//     if (num % i === 0) {
+//         isPrime = false
+//         break
+//     }
+// }
 
-if (isPrime) {
-    console.log(`${num} is a Prime Number`)
-} else {
-    console.log(`${num} is not a Prime Number`)
-}
+// if (isPrime) {
+//     console.log(`${num} is a Prime Number`)
+// } else {
+//     console.log(`${num} is not a Prime Number`)
+// }
+
+//Lec # 15
+//continue
+
+// for (i = 1; i <= 10; i++) {
+//     if (i === 7) {
+//         continue
+//     }
+//     console.log(i)
+// }
+
+//Find divisible of 3 and 7 from number range (1-100)
+// skip num 63
+
+// for (let i = 1; i <= 100; i++) {
+//     if (i % 3 === 0 && i % 7 === 0) {
+//         if (i === 63) {
+//             continue
+//         }
+//         console.log(i)
+//     }
+// }
+
+//while, do while
+
+// let i = 1
+
+// while (i < 10) {
+//     console.log(i)
+//     i++
+// }
+
+//do while
+// let i = 1
+
+// do {
+//     console.log(i)
+//     i++
+// } while (i === 10) //1
+// console.log('end')
+
+//Guess a number Game
+
+// let secretNo = 10;
+// let no_of_guess = 10;
+
+// while (no_of_guess > 0) {
+//     let user_input = Number(prompt("Enter a number"))
+
+//     if (secretNo === user_input) {
+//         console.log("Congratulations! You guesses the correct number")
+//         break
+//     } else if (user_input > secretNo) {
+//         console.log("High, guess low")
+//         no_of_guess--
+//     } else if (user_input < secretNo) {
+//         console.log("Low, guess High")
+//         no_of_guess--
+//     } else {
+//         console.log("Invalid Input")
+//     }
+// }
