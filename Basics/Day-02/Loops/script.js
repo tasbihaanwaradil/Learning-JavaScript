@@ -109,30 +109,50 @@
 
 // console.log("Sum of First 10 Natural Numbers: ", sum_of_num)
 
-
+//print factorial of a number
 // 1! = 1
 // 0! = 1
 
-let num = 1  // num 
-let factorial = 1;
+// let num = 1  // num 
+// let factorial = 1;
 
-//Edge Case 0 and 1
-//2! = 2x1 = 2
-//3! = 3x2x1 = 6
-//4! = 4x3x2x1 = 24
+// //Edge Case 0 and 1
+// //2! = 2x1 = 2
+// //3! = 3x2x1 = 6
+// //4! = 4x3x2x1 = 24
 
-if (num === 1 || num === 0) {
-    console.log(`The Factorial of ${num} is equal to 1`)
-} else if (num > 1) {
-    //check factorial of a number
-    for (let i = 1; i <= num; i++) {
-        factorial *= i
-    }
+// if (num === 1 || num === 0) {
+//     console.log(`The Factorial of ${num} is equal to 1`)
+// } else if (num > 1) {
+//     //check factorial of a number
+//     for (let i = 1; i <= num; i++) {
+//         factorial *= i
+//     }
 
+// }
+
+// console.log(factorial)
+
+
+//Write a program to check if a number is Prime or not
+
+let num = 4;
+let isPrime = true
+
+//Ege case num < 2
+if (num < 2) {
+    isPrime = false
 }
 
-console.log(factorial)
+for (let i = 2; i < num; i++) {
+    if (num % i === 0) {
+        isPrime = false
+        break
+    }
+}
 
-
-//print factorial of a number
-//Write a program to check if a number is Prime or not
+if (isPrime) {
+    console.log(`${num} is a Prime Number`)
+} else {
+    console.log(`${num} is not a Prime Number`)
+}
