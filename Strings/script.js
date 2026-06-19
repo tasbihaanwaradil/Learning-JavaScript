@@ -40,5 +40,27 @@
 //Practice Question
 //javascript count vowels in words
 
+//for in
+//for of
+//for each
+
+// let name = "Java"
+
+// for (let n of name) {
+//     console.log(n)
+// }
+
+let products = 'apple mango banana orange'
+
+// for(let product of products){
+//     console.log(product)
+// }
+ 
+// for(let i in products){
+//     console.log(i, products[i])
+
+// }
+
+//for each
 
 
