@@ -50,12 +50,35 @@
 
 //find a largest number in an array
 
-let marks = [70, 60, 80, 43, 22, 99]
-let largestNum = marks[0]
+// let marks = [70, 60, 80, 43, 22, 99]
+// let largestNum = marks[0]
 
-for (mark of marks) {
-    if (mark > largestNum) {
-        largestNum = mark
-    }
-}
-console.log(largestNum)
+// for (mark of marks) {
+//     if (mark > largestNum) {
+//         largestNum = mark
+//     }
+// }
+// console.log(largestNum)
+
+
+// let marks = [70, 60, 80, 43, 22, 99]
+
+// for (mark of marks) {
+//     console.log(mark ** 2)
+// }
+
+// let marks = [70, 60, 80, 43, 22, 99]
+
+// for (index in marks) {
+//     console.log(marks[index] + 2)
+// }
+
+//sum of array
+
+// let marks = [70, 60, 80, 43, 22, 99]
+// let totalSum = 0
+// for (mark of marks) {
+//     totalSum += mark
+// }
+
+// console.log(totalSum)
