@@ -172,3 +172,31 @@
 
 // const filteredItems = products.filter((product) => product > 500).map((filteredItem) => filteredItem).reduce((acc, val) => acc + val, 0)
 // console.log(filteredItems)
+
+// let marks = [56, 89, 54, 90]
+// push pop
+// shift unshift
+
+// marks.push(65)
+// console.log(marks)
+// marks.pop()
+// console.log(marks)
+// marks.pop()
+// console.log(marks)
+
+// marks.shift()
+// console.log(marks)
+
+// marks.unshift(12)
+// console.log(marks)
+
+// Practice Question
+
+// let students = ['ali', 'sidra', 'asad', 'aisha', 'hamza']
+//filter name whose first character starts with a 
+//using map display those name
+
+// console.log(students[0].at(0) === 'a')
+
+// const filteredNames = students.filter((student) => student[0] === 'a').map((filteredName) => console.log(filteredName))
+
