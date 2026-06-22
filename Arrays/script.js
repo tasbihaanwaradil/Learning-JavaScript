@@ -92,7 +92,7 @@
 // })
 // console.log(newStudents)
 
-let marks = [70, 60, 80, 43, 22, 99]
+// let marks = [70, 60, 80, 43, 22, 99]
 
 // marks.map((mark) => {
 //     if (mark > 60) {
@@ -111,4 +111,64 @@ let marks = [70, 60, 80, 43, 22, 99]
 // })
 
 //In short filter use to apply filters and map use to print/display filtered data
+//reduce to calculate sum
 
+//How we can write it in one line
+
+// let marks = [70, 60, 80, 43, 22, 99]
+// marks.filter((mark) => console.log(mark > 70))
+// let filteredMarks = marks.filter((mark) => mark > 70)
+//console.log(filteredMarks)
+
+//map filteredMarks
+// filteredMarks.map((mark) => console.log(mark))
+
+// let marks = [70, 60, 80, 43, 22, 99]
+// //Most Recommended 
+// const filteredMarks = marks.filter((mark) => mark >= 70).map((filteredMark) => console.log(filteredMark))
+
+// ====================
+// reduce()
+// ====================
+
+// Real-world Use Case:
+// Calculate the subtotal of items in a shopping cart.
+// reduce() combines all values into a single value.
+
+// reduce() takes a callback function with two main parameters:
+// acc -> Accumulator (stores the accumulated result)
+// val -> Current value being processed
+// acc is like a initial value. When we calculate total sum so we initialized totalSum = 0 
+// let marks = [70, 60, 80, 43, 22, 99]
+// let totalSum = marks.reduce((acc, val) => {
+//     return acc + val
+// }, 2)
+// console.log(totalSum)
+
+//dry run
+//First Iteration
+// acc = 2
+// val = 70
+// 2 + 70       => 72
+
+// acc = 72
+// 72 + 60      => 132
+
+// acc = 132
+// 132 + 80     => 212
+
+// acc = 212
+// 212 + 43     => 255
+
+//acc = 255
+// 255 + 22    => 277
+
+//acc = 277
+// 277 + 99   => 376
+
+
+
+// const products = [500, 800, 700, 560, 340, 890, 322]
+
+// const filteredItems = products.filter((product) => product > 500).map((filteredItem) => filteredItem).reduce((acc, val) => acc + val, 0)
+// console.log(filteredItems)
