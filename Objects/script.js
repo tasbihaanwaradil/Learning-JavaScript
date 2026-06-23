@@ -148,4 +148,3 @@
 // const avgMarks = students.map((student) => student.marks).reduce((acc, val) => acc + val, 0) / students.length
 // // console.log(avgMarks / 3)
 // console.log(avgMarks)
-
