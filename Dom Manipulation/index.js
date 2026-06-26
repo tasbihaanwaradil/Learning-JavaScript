@@ -44,21 +44,49 @@
 
 //Color Generator project
 
-const body = document.querySelector("body")
-const btn = document.querySelector(".change-color-btn")
+// const body = document.querySelector("body")
+// const btn = document.querySelector(".change-color-btn")
 
-const changeBackgroundColor = () => {
-    let red = Math.floor(Math.random() * 255)
-    let green = Math.floor(Math.random() * 255)
-    let blue = Math.floor(Math.random() * 255)
-    // console.log(red, green, blue)
-    //random color generation 
-    let randomColor = `rgb(${red}, ${green}, ${blue})`
-    // console.log(randomColor)
-    body.style.backgroundColor = randomColor
-}
+// const changeBackgroundColor = () => {
+//     let red = Math.floor(Math.random() * 255)
+//     let green = Math.floor(Math.random() * 255)
+//     let blue = Math.floor(Math.random() * 255)
+//     // console.log(red, green, blue)
+//     //random color generation 
+//     let randomColor = `rgb(${red}, ${green}, ${blue})`
+//     // console.log(randomColor)
+//     body.style.backgroundColor = randomColor
+// }
 
-changeBackgroundColor()
-btn.addEventListener("click", () => {
-    changeBackgroundColor();
-})
+// changeBackgroundColor()
+// btn.addEventListener("click", () => {
+//     changeBackgroundColor();
+// })
+
+// setTimeout(() => {
+//     changeBackgroundColor();
+
+// }, 1000) // This will not work
+
+// setInterval(() => {
+//     changeBackgroundColor();
+
+// }, 5000)
+
+//Asynchronous
+//Synchronous
+
+// console.log("Line 1")
+// // for (i = 0; i < 100000; i++) {
+// //     console.log("Line 2")
+// // }
+
+// setTimeout(() => {
+//     console.log("Line 2")
+// }, 5000)
+// for (i = 0; i < 50000; i++) {
+//     console.log("Line 2.5")
+// }
+// console.log("Line 3")
+
+// //event loop
