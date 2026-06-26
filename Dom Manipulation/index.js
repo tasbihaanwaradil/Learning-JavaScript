@@ -32,3 +32,33 @@
 //     heading.style.color = "green"
 // })
 
+//change background and change its color
+
+// const body = document.querySelector("body")
+// // body.style.backgroundColor = "lightblue"
+
+//generate random number
+
+// const number = Math.floor(Math.random() * 255)
+// console.log(number)
+
+//Color Generator project
+
+const body = document.querySelector("body")
+const btn = document.querySelector(".change-color-btn")
+
+const changeBackgroundColor = () => {
+    let red = Math.floor(Math.random() * 255)
+    let green = Math.floor(Math.random() * 255)
+    let blue = Math.floor(Math.random() * 255)
+    // console.log(red, green, blue)
+    //random color generation 
+    let randomColor = `rgb(${red}, ${green}, ${blue})`
+    // console.log(randomColor)
+    body.style.backgroundColor = randomColor
+}
+
+changeBackgroundColor()
+btn.addEventListener("click", () => {
+    changeBackgroundColor();
+})

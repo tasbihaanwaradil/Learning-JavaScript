@@ -1,0 +1,14 @@
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+div button {
+    background-color: lightcyan;
+    border: none;
+    padding: 10PX;
+    width: 120px;
+    border-radius: 20px;
+}
