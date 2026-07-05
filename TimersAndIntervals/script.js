@@ -31,9 +31,9 @@
 let counter = 10
 
 let interval = setInterval(() => {
-    if (counter >= 1) {
-        counter--
+    if (counter >= 0) {
         console.log(counter)
+        counter--
     } else {
         clearInterval(interval)
     }
