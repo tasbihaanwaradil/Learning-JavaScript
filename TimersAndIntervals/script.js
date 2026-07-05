@@ -27,14 +27,39 @@
 // console.log(interval)
 // clearInterval(interval);
 
-//Example usecase: Create a counter 10 - 0 
-let counter = 10
+//Example usecase: Create a counter 10 - 0
+// let counter = 10
 
+// let interval = setInterval(() => {
+//     if (counter >= 0) {
+//         console.log(counter)
+//         counter--
+//     } else {
+//         clearInterval(interval)
+//     }
+// }, 1000)
+
+//Progress Bar 
+
+
+
+//Progress Fill
+const progressFill = document.getElementById("progressFill")
+
+//Progress Text 0% - 100%
+const progressText = document.getElementById("progressText")
+
+//Download Heading
+const downloadHeading = document.querySelector("h1")
+
+let progress = 0;
 let interval = setInterval(() => {
-    if (counter >= 0) {
-        console.log(counter)
-        counter--
+    if (progress < 100) {
+        progress++
+        progressFill.style.width = `${progress}%`
+        progressText.innerText = `${progress}%`
     } else {
+        downloadHeading.innerText = "Download Complete"
         clearInterval(interval)
     }
-}, 1000)
+}, 20)
