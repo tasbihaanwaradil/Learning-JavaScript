@@ -53,6 +53,7 @@ const progressText = document.getElementById("progressText")
 const downloadHeading = document.querySelector("h1")
 
 let progress = 0;
+let seconds = 5
 let interval = setInterval(() => {
     if (progress < 100) {
         progress++
@@ -62,4 +63,4 @@ let interval = setInterval(() => {
         downloadHeading.innerText = "Download Complete"
         clearInterval(interval)
     }
-}, 20)
+}, (seconds * 1000) / 100)
