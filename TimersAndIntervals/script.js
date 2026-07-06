@@ -44,23 +44,31 @@
 
 
 //Progress Fill
-const progressFill = document.getElementById("progressFill")
+// const progressFill = document.getElementById("progressFill")
 
-//Progress Text 0% - 100%
-const progressText = document.getElementById("progressText")
+// //Progress Text 0% - 100%
+// const progressText = document.getElementById("progressText")
 
-//Download Heading
-const downloadHeading = document.querySelector("h1")
+// //Download Heading
+// const downloadHeading = document.querySelector("h1")
 
-let progress = 0;
-let seconds = 5
-let interval = setInterval(() => {
-    if (progress < 100) {
-        progress++
-        progressFill.style.width = `${progress}%`
-        progressText.innerText = `${progress}%`
-    } else {
-        downloadHeading.innerText = "Download Complete"
-        clearInterval(interval)
-    }
-}, (seconds * 1000) / 100)
+// let progress = 0;
+// let seconds = 5
+// let interval = setInterval(() => {
+//     if (progress < 100) {
+//         progress++
+//         progressFill.style.width = `${progress}%`
+//         progressText.innerText = `${progress}%`
+//     } else {
+//         downloadHeading.innerText = "Download Complete"
+//         clearInterval(interval)
+//     }
+// }, (seconds * 1000) / 100)
+
+//Auto hide Alert Banner
+
+const autoHideAlertBannerContainer = document.querySelector("#auto-hide-alert-banner")
+
+setInterval(() => {
+    autoHideAlertBannerContainer.classList.add("hidden")
+}, 3000)

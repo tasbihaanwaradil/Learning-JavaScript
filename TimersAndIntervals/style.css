@@ -47,3 +47,8 @@ h1 {
     font-size: 18px;
     font-weight: bold;
 }
+
+/* auto-hide-alert-banner */
+.hidden {
+    display: none;
+}
