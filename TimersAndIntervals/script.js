@@ -69,6 +69,6 @@
 
 const autoHideAlertBannerContainer = document.querySelector("#auto-hide-alert-banner")
 
-setInterval(() => {
+setTimeout(() => {
     autoHideAlertBannerContainer.classList.add("hidden")
 }, 3000)
