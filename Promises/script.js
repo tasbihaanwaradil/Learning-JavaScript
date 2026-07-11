@@ -1,5 +1,4 @@
-// // https://fakestoreapi.com/products/               fake store api
-
+// // https://fakestoreapi.com/products               fake store api
 
 // //Promises
 // //Select Elements from HTML
@@ -44,7 +43,40 @@
 
 //using async await
 //loading state
-const loadingState = document.getElementById("loading")
+const loadingState = document.getElementById("loading");
 
 //products container
-const productContainer = document.getElementById("products")
+const productContainer = document.getElementById("products");
+
+const getProducts = async () => {
+  try {
+    const response = await fetch("https://fakestoreapi.com/products");
+    // console.log(response.json()) //return promise
+
+    const products = await response.json();
+    // console.log(products)
+
+    //remove loadingState
+    loadingState.style.display = "none";
+
+    //show products
+
+    products.map((product) => {
+      productContainer.innerHTML += `
+            <div class="card">
+             <img src="${product.image}" alt="">
+             <p>${product.category}</p>
+             <h3>${product.title}</h3>
+             <h2>$${product.price}</h2>
+             <button>Add to Cart</button>
+         </div>
+            
+          `;
+    });
+  } catch (error) {
+    loadingState.innerHTML = `something went wrong`;
+    console.log(error);
+  }
+};
+
+getProducts();
