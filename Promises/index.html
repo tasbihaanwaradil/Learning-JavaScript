@@ -17,6 +17,27 @@
 
     </div>
 
+    <!-- Filter -->
+    <div class="filter">
+
+        <!-- search product -->
+        <input type="text" placeholder="Search product...." id="search">
+
+        <!-- Filter product by category -->
+        <select id="category">
+            <option value="all">All Categories</option>
+
+        </select>
+
+        <!-- Price Filter -->
+        <div class="price-filter">
+            <label>Max Price: <span id="priceValue">$1000</span></label>
+            <input type="range" id="priceRange" min="0" max="1000" value="500">
+        </div>
+
+
+    </div>
+
     <div class="products" id="products">
         <!-- <div class="card">
             <img src="" alt="">
