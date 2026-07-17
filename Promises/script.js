@@ -94,7 +94,7 @@ const loadingState = document.getElementById("loading");
 const searchInput = document.getElementById("search");
 
 //Search products by category
-const categorySelected = document.getElementById("category");
+const categorySelectOption = document.getElementById("category");
 
 //Search products by priceRange
 const priceRange = document.getElementById("priceRange");
@@ -110,8 +110,8 @@ const categories = [
 
 //Inject Categories in HTML option tag
 categories.map((category) => {
-  categorySelected.innerHTML += `
-  <option value="all">${category}</option>
+  categorySelectOption.innerHTML += `
+  <option value="${category}">${category}</option>
   `;
 });
 
@@ -160,5 +160,33 @@ function displayProducts(products) {
   });
 }
 
+//Events
+searchInput.addEventListener("input", filterProducts);
+categorySelectOption.addEventListener("change", filterProducts);
+priceRange.addEventListener("input", () => {
+  priceValue.innerText = `$${priceRange.value}`;
+  filterProducts();
+});
 
+function filterProducts() {
+  //convert user type value in input field convert into lowercase
+  const searchInputValue = searchInput.value.toLowerCase();
+  const categorySelected = categorySelectOption.value;
+  const priceSelected = Number(priceRange.value);
 
+  // console.log(searchInputValue, categorySelected, priceSelected);
+
+  const filteredProducts = allProducts.filter((product) => {
+    const matchSearch = product.title.toLowerCase().includes(searchInputValue);
+    const matchCategory =
+      categorySelected === "all" || product.category === categorySelected;
+    const matchPrice = product.price <= priceSelected;
+
+    return matchSearch && matchCategory && matchPrice;
+  });
+
+  displayProducts(filteredProducts);
+}
+
+//change event: wait for complete word
+//input event: character by character filter
